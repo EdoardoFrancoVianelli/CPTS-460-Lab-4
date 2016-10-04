@@ -1,0 +1,11 @@
+VFD=../FDimage
+
+rm u1.o
+rm u2.o
+
+sudo mount -o loop $VFD /mnt
+rm /mnt/bin/*
+sudo umount /mnt
+
+./mku u1
+./mku u2
